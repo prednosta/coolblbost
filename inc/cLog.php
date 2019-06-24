@@ -1,53 +1,36 @@
  <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+include "conn.php"; // pripojeni db
 
-$dbname = "coolmoney";
+$email = $conn->real_escape_string($_POST["email"]);
+$heslo = $conn->real_escape_string($_POST["heslo"]);
 
-// pripojeni
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// kontrola pripojeni
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-//změna charset
-if (!$conn->set_charset("utf8")) {
-	printf("utf8 nenacten: %s<br />", $conn->error);
-	exit();
-} else {
-	$conn->character_set_name();
-}
-
-$email = $_POST["email"];
-$heslo = $_POST["heslo"];
-
-//vyber dat
+// vyber dat
 $dotaz = "SELECT email, heslo FROM uzivatel WHERE email='" . $email . "'" ;
 $data = $conn->query($dotaz);
-			
+
 if ( $data->num_rows > 0 ) {
 	while ( $radek = $data->fetch_assoc()) {
 		//echo "email: " . $radek["email"] . " heslo: " . $radek["heslo"] . "<br />";
 		if ( ( $radek["email"] == $email ) and ( $radek["heslo"] == $heslo ) ) {
+			session_start();
+			$_SESSION['login'] = stripslashes($email); // vytvoreni session login
+
 			echo "přihlášení je ok<br/>";
-			header("refresh:3;url=../house.php");
+
+			header("refresh:0;url=../house.php");
 			die();
 		}
 		else {
 			echo "něco je špatně<br/>";
 		}
-		echo $radek["email"] . " " . $radek["heslo"] . "<br/>";
-
+		//echo $radek["email"] . " " . $radek["heslo"] . "<br/>";
+		
 
 	}
 } else {
-	echo "Chyba: " . $dotaz . "<br />" . $conn->error;
+	//echo "Chyba: " . $dotaz . "<br />" . $conn->error;
+	echo "něco je špatně, zkus to <a href='../'>znovu</a><br/>";
 }
-
-echo $email . " " . $heslo;
 
 $conn->close();
 ?> 

@@ -1,3 +1,7 @@
+<?php 
+
+ ?>
+
 <!doctype html>
 <html lang="cs">
   <head>
@@ -9,8 +13,8 @@
 	<mena name="author" content="Břetislav Král">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./inc/styl.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="./inc/styl.css" >
 
     <title>Coolblbost</title>
   </head>
