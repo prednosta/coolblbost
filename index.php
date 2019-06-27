@@ -21,11 +21,12 @@ include "./inc/head.php" ;
                             <label for="inputPassword">Heslo</label>
                         </div>
 
-                        <div class="custom-control custom-checkbox mb-3">
+<!--                         <div class="custom-control custom-checkbox mb-3">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                             <label class="custom-control-label" for="customCheck1">Zapamatuj heslo</label>
                         </div>
-                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Přihlaš se</button>
+ -->
+						<button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Přihlaš se</button>
                         <hr/>
                         <br/>
                         <a href="registrace.php" alt="zaregistruj se" class="btn btn-lg btn-primary btn-block text-uppercase">Registruj se</a>
