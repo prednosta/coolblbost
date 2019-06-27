@@ -12,13 +12,13 @@ include "./inc/head.php" ;
                     <h5 class="card-title text-center">Coolblbost</h5>
                     <form class="form-signin" action="./inc/cLog.php" method="post">
                         <div class="form-label-group">
+							<input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                             <label for="inputEmail">Email</label>
-                            <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                         </div>
 
                         <div class="form-label-group">
-                            <label for="inputPassword">Heslo</label>
                             <input type="password" name="heslo" id="inputPassword" class="form-control" placeholder="Password" required>
+                            <label for="inputPassword">Heslo</label>
                         </div>
 
                         <div class="custom-control custom-checkbox mb-3">

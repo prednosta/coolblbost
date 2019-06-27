@@ -15,9 +15,9 @@ if ( $data->num_rows > 0 ) {
 			session_start();
 			$_SESSION['login'] = stripslashes($email); // vytvoreni session login
 
-			echo "přihlášení je ok<br/>";
+			//echo "přihlášení je ok<br/>";
 
-			header("refresh:0;url=../house.php");
+			header("Location:../house.php");
 			die();
 		}
 		else {
