@@ -1,4 +1,6 @@
-jsou zde tyto nezaplacené faktury: <br>
+<link rel="stylesheet" href="./inc/error.css" >
+
+<span class="error">pohledávky: </span><br>
 
 <ul>
 	<li>Takjron makron: 50000,-</li>

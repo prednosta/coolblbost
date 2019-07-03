@@ -31,16 +31,16 @@ session_start();
 	</div>
 	<div class="row">
 		<div class="col-md-3 col-auto">
-			<a href="house.php?str=zakazky" class="btn btn-outline-primary text-uppercase">Zakázky</a>
+			<a href="house.php?str=zakazky" class="btn <?php if($_GET['str']=='zakazky') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase">Zakázky</a>
 		</div>
 		<div class="col-md-3 col-auto">
-			<a href="house.php?str=material" class="btn btn-outline-primary text-uppercase">Materiál</a>
+			<a href="house.php?str=material" class="btn <?php if($_GET['str']=='material') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase">Materiál</a>
 		</div>
 		<div class="col-md-3 col-auto">
-			<a href="house.php?str=zakaznici" class="btn btn-outline-primary text-uppercase">Zákazníci</a>
+			<a href="house.php?str=zakaznici" class="btn <?php if($_GET['str']=='zakaznici') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase">Zákazníci</a>
 		</div>
 		<div class="col-md-3 col-auto">
-			<a href="house.php?str=faktury" class="btn btn-outline-primary text-uppercase">Faktury</a>
+			<a href="house.php?str=faktury" class="btn <?php if($_GET['str']=='faktury') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase">Faktury</a>
 		</div>
 	</div>
 	<div class="row">
