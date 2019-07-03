@@ -1,4 +1,21 @@
- <?php
+<!doctype html>
+<html lang="cs">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<mena name="description" content="Coolblbost">
+	<mena name="robots" content="index,follow">
+	<mena name="author" content="Břetislav Král">
+
+    <link rel="stylesheet" href="./error.css" >
+
+    <title>Coolblbost</title>
+  </head>
+  
+<body>
+<div class="err-cont">
+<?php
 include "conn.php"; // pripojeni db
 
 $email = $conn->real_escape_string($_POST["email"]);
@@ -15,16 +32,21 @@ if ( $data->num_rows > 0 ) {
 			$_SESSION['login'] = stripslashes($email); // vytvoreni session login
 
 			header("Location:../house.php");
-			die();
+			//die();
 		}
-		else {
-			echo "něco je špatně<br/>";
+		elseif (( $radek["email"] == $email ) and ( $radek["heslo"] != $heslo )) {
+			echo "<span class='error'>špatné heslo</span> <br/>" . $radek["email"];
+			header("Refresh: 3; url=../house.php");
 		}
 	}
-} else {
+} 
+else {
 	//echo "Chyba: " . $dotaz . "<br />" . $conn->error;
-	echo "něco je špatně, zkus to <a href='../'>znovu</a><br/>";
+	echo "<span class='error'>něco je špatně, zkus to <a href='../'>znovu</a><br/></span>";
 }
 
 $conn->close();
-?> 
+?>
+</div>
+</body>
+</html>

@@ -8,12 +8,19 @@ body {
   background: linear-gradient(to right, #0062E6, #33AEFF);
 }
 
+.container-fluid {
+	background: #ffffff;
+	margin: 0 auto;
+}
+
 .cont {
 	background: #ffffff;
 	margin: 0 auto;
 	width: 70%;
 	padding: 20px;
 }
+
+
 
 .card-signin {
   border: 0;

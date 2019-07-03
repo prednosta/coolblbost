@@ -22,9 +22,9 @@ include "./lng/lang.php" ;
 									Lang
 								</button>
 								<div class="dropdown-menu" aria-labelledby="language">
-									<a class="dropdown-item" href="#">de</a>
+									<a class="dropdown-item" href="#">de</a> <!-- $lng = "de" ??? -->
 									<a class="dropdown-item" href="#">eng</a>
-									<a class="dropdown-item" href="<?php $_SESSION['jazyk'] = "cz"; ?>">cz</a>
+									<a class="dropdown-item" href="#">cz</a>
 								</div>
 							</div>
 						</div>

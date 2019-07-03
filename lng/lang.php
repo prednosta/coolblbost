@@ -1,5 +1,6 @@
 <?php // vyber lokalizace
 $lng = "cz";
+$_SESSION['jazyk'] = "cz";
 
 	if ( $_SESSION['jazyk'] == "eng" ) {
 		
