@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./inc/error.css" >
 
-<span class="error">pohledávky: </span><br>
+<span class="error"><?php echo $POHLEDAVKY ?>: </span><br>
 
 <ul>
 	<li>Takjron makron: 50000,-</li>

@@ -14,4 +14,10 @@ $TELEFON = "phone number";
 
 $NEW_USER_REG = "New user";
 
+$ZAKAZKY = "orders";
+$MATERIAL = "store";
+$ZAKAZNICI = "customers";
+$FAKTURY = "invoices";
+$POHLEDAVKY = "receivables";
+
 ?>

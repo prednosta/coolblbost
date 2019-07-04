@@ -14,4 +14,10 @@ $TELEFON = "telefon";
 
 $NEW_USER_REG = "Nový uživatel";
 
+$ZAKAZKY = "zakázky";
+$MATERIAL = "sklad";
+$ZAKAZNICI = "zákazníci";
+$FAKTURY = "faktury";
+$POHLEDAVKY = "pohledávky";
+
 ?>

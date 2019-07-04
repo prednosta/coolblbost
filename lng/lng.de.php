@@ -13,4 +13,11 @@ $PRIJMENI = "nachname";
 $TELEFON = "telefonnummer";
 
 $NEW_USER_REG = "neuer Benutzer";
+
+$ZAKAZKY = "bestellen";
+$MATERIAL = "material";
+$ZAKAZNICI = "kunden";
+$FAKTURY = "rechnungen";
+$POHLEDAVKY = "forderungen";
+
 ?>

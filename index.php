@@ -27,7 +27,7 @@ include "./lng/lang.php";
                     <!-- přihlásit se -->
 					<div class="row">
 						<div class="col">
-							<h3 class="card-title text-left bold">Coolblbost</h3>
+							<h3 class="card-title text-left bold"><a href="../" >Coolblbost</a></h3>
 						</div>
 						<div class="col text-right ">
 							<div class="btn-group " role="group">
