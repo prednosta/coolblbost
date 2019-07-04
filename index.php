@@ -1,7 +1,20 @@
 <?php 
 session_start();
 include "./inc/head.php" ;
-include "./lng/lang.php" ; 
+
+if ( isset($_GET['lang']) ) {
+	if ($_GET['lang'] == "de") {
+		$_SESSION['lng'] = "de";
+	} elseif ($_GET['lang'] == "eng") {
+		$_SESSION['lng'] = "eng";
+	} elseif ($_GET['lang'] == "cz") {
+		$_SESSION['lng'] = "cz";
+	}
+} else {
+	$_SESSION['lng'] = "cz";
+}
+
+include "./lng/lang.php";
 
 ?>
 
@@ -19,12 +32,12 @@ include "./lng/lang.php" ;
 						<div class="col text-right ">
 							<div class="btn-group " role="group">
 								<button id="language" type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expandable="false">
-									Lang
+									<?php echo $JAZYK ?>
 								</button>
 								<div class="dropdown-menu" aria-labelledby="language">
-									<a class="dropdown-item" href="#">de</a> <!-- $lng = "de" ??? -->
-									<a class="dropdown-item" href="#">eng</a>
-									<a class="dropdown-item" href="#">cz</a>
+									<a class="dropdown-item" href="index.php?lang=de">de</a> <!-- $lng = "de" ??? -->
+									<a class="dropdown-item" href="index.php?lang=eng">eng</a>
+									<a class="dropdown-item" href="index.php?lang=cz">cz</a>
 								</div>
 							</div>
 						</div>

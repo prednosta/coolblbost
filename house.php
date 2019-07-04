@@ -1,18 +1,23 @@
 <?php
 include "./inc/head.php" ;
 session_start();
+
+include "./lng/lang.php";
 ?>
 
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-3">
-			<h2>Vítej</h2>
+			<h2><?php echo $VITEJ ?></h2>
 		</div>
 		<div class="col">
 			<b>
 <?php
 	if ($_SESSION['login'] != "" ) { // pro prihlasene uzivatele
 		echo " " .  $_SESSION['login'] . "<br />";
+		if ( !isset($_GET['str']) ) {
+			$_GET['str'] = 'zakazky';
+		}
 	} else {                         // pro neprihlasene
 		//echo "abys byl pozdraven lépe, musíš se přihlásit.";
 		header("Location:index.php");
@@ -21,7 +26,7 @@ session_start();
 			</b>
 		</div>
 		<div class="col-auto">
-			<a href="logout.php" class="btn btn-outline-danger text-uppercase">Odhlásit se</a>
+			<a href="logout.php" class="btn btn-outline-danger text-uppercase"><?php echo $ODHLASIT ?></a>
 		</div>
 	</div>
 	<div class="row">
