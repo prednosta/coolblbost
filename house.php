@@ -1,8 +1,6 @@
 <?php
 include "./inc/head.php" ;
-session_start();
 
-include "./lng/lang.php";
 ?>
 
 <div class="container-fluid">

@@ -1,5 +1,4 @@
 <?php 
-session_start();
 include "./inc/head.php" ;
 
 if ( isset($_GET['lang']) ) {
@@ -27,7 +26,7 @@ include "./lng/lang.php";
                     <!-- přihlásit se -->
 					<div class="row">
 						<div class="col">
-							<h3 class="card-title text-left bold"><a href="../" >Coolblbost</a></h3>
+							<h5 class="card-title text-left bold"><a href="../" ><?php echo $APP_NAME ?></a></h5>
 						</div>
 						<div class="col text-right ">
 							<div class="btn-group " role="group">

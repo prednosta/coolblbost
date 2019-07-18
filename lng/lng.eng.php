@@ -1,5 +1,7 @@
 <?php // lokalizace angličtina
 
+$APP_NAME = "Coolmoney";
+
 $JAZYK = "Language";
 $VITEJ = "Welcome";
 $EMAIL = "email";

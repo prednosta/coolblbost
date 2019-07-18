@@ -1,5 +1,5 @@
 <?php
-// pripojeni k databazy
+// pripojeni k databazi
 
 
 $servername = "localhost"; // jmeno serveru
