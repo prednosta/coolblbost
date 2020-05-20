@@ -9,6 +9,7 @@ $HESLO = "passwort";
 $PRIHLASIT = "login";
 $ODHLASIT = "abbestellen";
 $REGISTRACE = "register";
+$NASTAVIT = "einstellungen";
 
 $JMENO = "name";
 $PRIJMENI = "nachname";

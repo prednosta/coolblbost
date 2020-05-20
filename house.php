@@ -24,31 +24,28 @@ include "./inc/head.php" ;
 			</b>
 		</div>
 		<div class="col-auto">
+			<a href="./adm/nastaveni.php" class="btn btn-outline-info text-uppercase"><?php echo $NASTAVIT ?></a>
 			<a href="logout.php" class="btn btn-outline-danger text-uppercase"><?php echo $ODHLASIT ?></a>
 		</div>
 	</div>
+
 	<div class="row">
-		<div class="col-12">
-			<hr />		   
-		</div>
-	</div>
-	<div class="row">
-		<ul class="nav nav-tabs">
-			<li>
-	        		<a href="house.php" class="btn btn-primary text-uppercase">pohledávky</a>
-	        	</li>
-			<li>
-				<a href="house.php?str=zakazky" class="btn <?php if($_GET['str']=='zakazky') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $ZAKAZKY ?></a>
-			</li>
-			<li class="col-md-3 col-auto">
-				<a href="house.php?str=material" class="btn <?php if($_GET['str']=='material') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $MATERIAL ?></a>
-			</li>
-			<li class="col-md-3 col-auto">
-				<a href="house.php?str=zakaznici" class="btn <?php if($_GET['str']=='zakaznici') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $ZAKAZNICI ?></a>
-			</li>
-			<li class="col-md-3 col-auto">
-				<a href="house.php?str=faktury" class="btn <?php if($_GET['str']=='faktury') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $FAKTURY ?></a>
-			</li>
+	    <ul class="nav nav-tabs">
+	        <li>
+	            <a href="house.php" class="btn <?php if($_GET['str']=='') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $POHLEDAVKY ?></a>
+	        </li>
+    		<li >
+    			<a href="house.php?str=zakazky" class="btn <?php if($_GET['str']=='zakazky') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $ZAKAZKY ?></a>
+    		</li>
+    		<li >
+    			<a href="house.php?str=material" class="btn <?php if($_GET['str']=='material') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $MATERIAL ?></a>
+    		</li>
+    		<li >
+    			<a href="house.php?str=zakaznici" class="btn <?php if($_GET['str']=='zakaznici') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $ZAKAZNICI ?></a>
+    		</li>
+    		<li >
+    			<a href="house.php?str=faktury" class="btn <?php if($_GET['str']=='faktury') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $FAKTURY ?></a>
+    		</li>
 		</ul>
 	</div>
 	<div class="row">

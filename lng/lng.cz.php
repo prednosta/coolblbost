@@ -9,6 +9,7 @@ $HESLO = "heslo";
 $PRIHLASIT = "prihlasit";
 $ODHLASIT = "odhlásit se";
 $REGISTRACE = "registruj se";
+$NASTAVIT = "nastavení";
 
 $JMENO = "jmeno";
 $PRIJMENI = "prijmeni";

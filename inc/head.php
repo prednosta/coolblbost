@@ -9,7 +9,7 @@ include_once "./lng/lang.php";
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<mena name="description" content="<?php echo $APP_NAME ?>">
+	<mena name="description" content="Coolblbost">
 	<mena name="robots" content="index,follow">
 	<mena name="author" content="Břetislav Král">
 
@@ -17,7 +17,7 @@ include_once "./lng/lang.php";
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="./inc/styl.css" >
 
-    <title><?php echo $APP_NAME ?></title>
+    <title>Coolblbost</title>
   </head>
   
 <body>

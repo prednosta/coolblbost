@@ -1,23 +1,26 @@
 <?php
 include "./inc/head.php" ;
+session_start();
 
 include "./lng/lang.php";
 
-?>
+/* if ( $_SESSION['lng'] == "de" ) {
+	include_once "./lng/lng.de.php";
+} else if ($_SESSION['lng'] == "eng" ) {
+	include_once "./lng/lng.eng.php";
+} else if ($_SESSION['lng'] == "cz" ) {
+	include_once "./lng/lng.cz.php";
+} else {
+	include_once "./lng/lng.cz.php";
+}
+ */?>
 
 <div class="container">
 	<div class="row">
 		<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
 			<div class="card card-signin my-5">
 				<div class="card-body"> <!-- registrace se -->
-					<div class="row">
-						<div class="col">
-							<h5 class="card-title text-left bold"><a href="../" ><?php echo $APP_NAME ?></a></h5>
-						</div>
-						<div class="col">
-							<h5 class="card-title text-right"><?php echo $NEW_USER_REG ?></h5>
-						</div>
-					</div>
+					<h5 class="card-title text-center"><?php echo $NEW_USER_REG ?></h5>
 				<!--                           formulář                          -->
 				<form class="form-signin" action="./inc/cReg.php" method="post">
 					<div class="form-label-group">

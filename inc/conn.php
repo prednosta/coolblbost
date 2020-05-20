@@ -1,12 +1,12 @@
 <?php
-// pripojeni k databazi
+// pripojeni k databaze
 
 
-$servername = "localhost"; // jmeno serveru
-$username = "root";        // uzivatelske jmeno
-$password = "";            // heslo
+$servername = "sql.endora.cz:3312"; // jmeno serveru
+$username = "finchcz";        // uzivatelske jmeno
+$password = "14Am3fvt";            // heslo
 
-$dbname = "coolmoney";     // nazev databaze
+$dbname = "coolblbost";     // nazev databaze
 
 // pripojeni
 $conn = new mysqli($servername, $username, $password, $dbname);
