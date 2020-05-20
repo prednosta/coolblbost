@@ -9,3 +9,5 @@
 	<li>Pan Pis Gross: 302423,-</li>
 	<li>Esmeralda Marmelada: 230,-</li>
 </ul>
+
+toto ještě není hotové, budou zde zákazníci a jejich dluhy

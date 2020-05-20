@@ -33,18 +33,23 @@ include "./inc/head.php" ;
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-3 col-auto">
-			<a href="house.php?str=zakazky" class="btn <?php if($_GET['str']=='zakazky') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $ZAKAZKY ?></a>
-		</div>
-		<div class="col-md-3 col-auto">
-			<a href="house.php?str=material" class="btn <?php if($_GET['str']=='material') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $MATERIAL ?></a>
-		</div>
-		<div class="col-md-3 col-auto">
-			<a href="house.php?str=zakaznici" class="btn <?php if($_GET['str']=='zakaznici') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $ZAKAZNICI ?></a>
-		</div>
-		<div class="col-md-3 col-auto">
-			<a href="house.php?str=faktury" class="btn <?php if($_GET['str']=='faktury') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $FAKTURY ?></a>
-		</div>
+		<ul class="nav nav-tabs">
+			<li>
+	        		<a href="house.php" class="btn btn-primary text-uppercase">pohledávky</a>
+	        	</li>
+			<li>
+				<a href="house.php?str=zakazky" class="btn <?php if($_GET['str']=='zakazky') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $ZAKAZKY ?></a>
+			</li>
+			<li class="col-md-3 col-auto">
+				<a href="house.php?str=material" class="btn <?php if($_GET['str']=='material') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $MATERIAL ?></a>
+			</li>
+			<li class="col-md-3 col-auto">
+				<a href="house.php?str=zakaznici" class="btn <?php if($_GET['str']=='zakaznici') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $ZAKAZNICI ?></a>
+			</li>
+			<li class="col-md-3 col-auto">
+				<a href="house.php?str=faktury" class="btn <?php if($_GET['str']=='faktury') { echo 'btn-primary'; } else { echo 'btn-outline-primary'; } ?> text-uppercase"><?php echo $FAKTURY ?></a>
+			</li>
+		</ul>
 	</div>
 	<div class="row">
 		<div class="col">
